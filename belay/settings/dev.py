@@ -31,3 +31,16 @@ DEBUG_TOOLBAR_CONFIG = {
 
 # Log sent emails to the console.
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'aapcc.db',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
+    }
+}
+
+COMPRESS_ENABLED = False

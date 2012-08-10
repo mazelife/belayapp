@@ -1,5 +1,6 @@
 # These are the libraries that are required to run the belay project.
 
-docutils
-Django==1.4
+docutils==0.9.1
+Django==1.4.1
+django-compressor==1.1.2
 Sphinx==1.1.3
