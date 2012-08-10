@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Belay Me{% endblock %}
+{% block main %}{% load static %}
+<h1>Hello World!</h1>
+<div id="map"></div>
+{% endblock %}
+{% block extrajs %}
+<script src="{% static 'js/map.js' %}"></script>
+<script src="{% static 'js/geo.js' %}"></script>
+<script>
+    var gps = new GPS(function (location) {
+        map_image(location.coords.latitude, location.coords.longitude, $("#map"))
+    });
+</script>
+{% endblock %}
